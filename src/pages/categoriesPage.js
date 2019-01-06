@@ -16,7 +16,6 @@ class App extends React.Component {
     ("http://localhost:5000/categories")
     .then(response => response.json())
       .then(json => {
-        console.log(json)
        this.setState({
           items: json.data
           
